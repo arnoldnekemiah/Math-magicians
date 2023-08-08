@@ -40,9 +40,6 @@ This project is built with React.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-To visit the live version of this project <a href="#"> click here</a>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
