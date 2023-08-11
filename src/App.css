@@ -1,7 +1,7 @@
 .calc {
   border: 1px solid black;
-  width: 60vw;
-  height: 50vh;
+  width: 50vw;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -41,4 +41,17 @@ button {
 .btnDiv > *:nth-child(4n+4),
 .equal {
   background-color: orange;
+}
+
+.quote-container {
+  /* margin-top: 50px; */
+  border: 1px solid grey;
+  width: 48vw;
+  margin-top: 16px;
+  padding: 16px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.quote-container p {
+  text-align: center;
 }
