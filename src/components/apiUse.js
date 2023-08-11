@@ -19,16 +19,18 @@ function FetchApi() {
       );
 
       if (response.status >= 200 && response.status <= 299) {
-        const fetchedData = await response.json();
-        if (!isCancelled) {
-          setQuotes(fetchedData);
-          setLoading(false);
-        }
-      } else {
-        const errorMessage = 'Oops! Something went wrong';
-        if (!isCancelled) {
-          setErrorMsg(errorMessage);
-          setLoading(false);
+        if (response.ok) {
+          const fetchedData = await response.json();
+          if (!isCancelled) {
+            setQuotes(fetchedData);
+            setLoading(false);
+          }
+        } else {
+          const errorMessage = 'Oops! Something went wrong';
+          if (!isCancelled) {
+            setErrorMsg(errorMessage);
+            setLoading(false);
+          }
         }
       }
     };
