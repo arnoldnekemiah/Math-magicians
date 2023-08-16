@@ -1,6 +1,4 @@
 import './App.css';
-// import Calculator from './components/Calculator';
-// import FetchApi from './components/apiUse';
 import {
   createBrowserRouter,
   createRoutesFromElements,

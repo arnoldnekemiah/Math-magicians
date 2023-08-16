@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="home">
-      <h2>Welcome to Our Page</h2>
+      <h2>Welcome to Our Page!</h2>
       <p>
         Experience the ultimate mathematical convenience on our website,
         where a powerful calculator awaits to effortlessly tackle your
