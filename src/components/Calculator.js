@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, React } from 'react';
 import ButtonDiv from './buttons-container';
 import calculate from '../logic/calculate';
 
