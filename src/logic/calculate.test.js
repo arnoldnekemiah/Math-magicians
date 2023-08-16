@@ -1,4 +1,4 @@
-import calculate from './calculate'; 
+import calculate from './calculate';
 
 describe('calculate', () => {
   it('should handle AC button', () => {
@@ -11,7 +11,7 @@ describe('calculate', () => {
   });
 
   it('should handle numbers', () => {
-    const result = calculate({  next: '2', operation: '+' , total: '5' }, '3');
+    const result = calculate({ next: '2', operation: '+', total: '5' }, '3');
     expect(result).toEqual({
       total: '5',
       next: '23',
@@ -22,7 +22,7 @@ describe('calculate', () => {
   it('should handle "." button', () => {
     const result = calculate({ next: '5', operation: '+' }, '.');
     expect(result).toEqual({
-      next: '5.',  // result of the operation
+      next: '5.', // result of the operation
       operation: '+',
     });
   });
@@ -35,5 +35,4 @@ describe('calculate', () => {
       operation: null,
     });
   });
-
 });
