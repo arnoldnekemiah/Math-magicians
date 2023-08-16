@@ -36,7 +36,6 @@ body {
   color: hsla(0, 10%, 10%, 0.789);
 }
 
-
 /* navbar */
 .navbar {
   display: flex;
@@ -97,7 +96,6 @@ body {
   text-align: center;
   margin-top: 32px;
 }
-
 
 /* Calculator styles */
 .calc {
