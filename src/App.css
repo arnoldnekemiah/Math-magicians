@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Quotes page */
+.Quote h2 {
+  text-align: center;
+}
+
+.quote-container {
+  border: 1px solid grey;
+  width: 48vw;
+  margin-top: 64px;
+  margin-left: 160px;
+  padding: 16px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.quote-container p {
+  text-align: center;
+}
+
+/* body styles */
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+
+  /* background: var(--secondary); */
+}
+
+* {
+  color: hsla(0, 10%, 10%, 0.789);
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  gap: 700px;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo h1 {
+  border-bottom: 3px solid var(--primary);
+  margin: 0; /* Remove default margin for h1 element */
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.nav-items a.active {
+  background: var(--primary);
+}
+
+/* home styles */
+.home {
+  margin-top: 100px;
+}
+
+.home h2 {
+  text-align: left;
+}
+
+.home p {
+  margin-top: 20px;
+  text-align: left;
+  width: 900px;
+}
+
+/* Calculator page */
+
+.about {
+  background-color: #fff;
+  display: flex;
+}
+
+.about h2 {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Calculator styles */
+.calc {
+  border: 1px solid black;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 250px;
+  margin-top: 32px;
+}
+
+.screen {
+  background-color: grey;
+  color: rgb(225, 225, 225);
+  padding: 0.7rem;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.btnDiv {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  border: 1px solid grey;
+  background-color: rgb(212, 212, 212);
+  color: rgb(39, 60, 60);
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.btnDiv > *:nth-child(4n+4),
+.equal {
+  background-color: orange;
+}
